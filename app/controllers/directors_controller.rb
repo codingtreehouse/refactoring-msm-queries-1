@@ -25,7 +25,7 @@ class DirectorsController < ApplicationController
 
     render({ :template => "director_templates/youngest" })
   end
-
+  
   def min_dob
     directors_by_dob_asc = Director.
       all.
